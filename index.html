@@ -11,6 +11,18 @@ function showInfo(text){
 }
 </script>
 
+<script>
+function submitForm(event) {
+  event.preventDefault(); // stop page reload
+
+  // hide form
+  document.getElementById("contact-section").style.display = "none";
+
+  // show success message
+  document.getElementById("success-msg").style.display = "block";
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -189,8 +201,7 @@ header {
     <h1>E-SCIENCE STARTUP COMPANY</h1>
     <p>ITK.Manimaran</p>
     <p>
-      IoT projects connect physical devices to the internet for monitoring, automation, 
-      and data analysis using platforms like ESP32, Arduino, and Raspberry Pi.
+      With strong professional experience in electronics, robotics, and drone technology, E-Science is committed to delivering high-quality and reliable project solutions for college students. Our team brings practical expertise in designing, developing, and implementing real-time systems that meet academic and industry standards. We focus on precision, innovation, and continuous improvement to ensure every product delivers maximum performance .
     </p>
   </div>
 </section>
@@ -199,8 +210,7 @@ header {
 <section class="section">
   <h2>About Our Platform</h2>
   <p>
-    IoT projects connect physical devices to the internet for monitoring, automation, 
-    and data analysis using platforms like ESP32, Arduino, and Raspberry Pi.
+    We are a technology-focused company committed to delivering high-quality electronics and drone-based project solutions for college students. With a strong emphasis on innovation, reliability, and practical application, we provide well-designed systems that support academic projects, research, and skill development. Our offerings span across key domains such as robotics, IoT, and embedded systems, ensuring industry-relevant learning experiences. By maintaining high standards in design and support, we aim to equip students with the tools and knowledge required to excel in their academic and professional careers in engineering and technology.
   </p>
 </section>
 
@@ -213,6 +223,9 @@ header {
   </div>
 
   <div class="grid">
+
+    <div class="card" onclick="showInfo('We offer a wide range of ready-to-use and customizable projects in areas such as robotics, IoT, embedded systems, and drones')">All Electronics Projects</div>
+
     <div class="card" onclick="showInfo('Robotics projects include line follower, obstacle avoidance robots, and AI bots.')">Robots</div>
 
     <div class="card" onclick="showInfo('Drone projects include surveillance, delivery, and aerial photography systems.')">Drones</div>
